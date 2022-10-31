@@ -41,9 +41,151 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public void OnPointerClick(PointerEventData eventData)
     {
         int currquesint = GMScript.index;
-        if (GMScript.test[index] == GMScript.operator1[currquesint] - GMScript.operator2[currquesint])
+        int o1 = GMScript.operator1[currquesint];
+        int o2 = GMScript.operator2[currquesint];
+
+        //Debug.Log("in click control");
+        if(o2==0 || o2==1){
+            GMScript.questions_types_total[0] += 1;
+            if(GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[0] += 1;
+            }
+        }
+        if (o1 == o2 * 2 && o1<10)
         {
-            Debug.Log("correct ans");
+            GMScript.questions_types_total[1] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[1] += 1;
+            }
+        }
+        if(o1 == o2 * 2 && o1 >= 10 && o1 <= 99)
+        {
+            GMScript.questions_types_total[2] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[2] += 1;
+            }
+        }
+        if (o1 == 10)
+        {
+            GMScript.questions_types_total[3] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[3] += 1;
+            }
+        }
+        if(o1>=10 && o1<=20 && o2 == 10)
+        {
+            GMScript.questions_types_total[4] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[4] += 1;
+            }
+        }
+        if (o1 == o2 * 2 + 1)
+        {
+            GMScript.questions_types_total[5] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[5] += 1;
+            }
+        }
+        if(o1==9 || o1 == 11)
+        {
+            GMScript.questions_types_total[6] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[6] += 1;
+            }
+        }
+        if (o1 == o2 - 2)
+        {
+            GMScript.questions_types_total[7] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[7] += 1;
+            }
+        }
+        if(o2==2)
+        {
+            GMScript.questions_types_total[8] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[8] += 1;
+            }
+        }
+        if (o2 == 10)
+        {
+            GMScript.questions_types_total[9] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[9] += 1;
+            }
+        }
+        if (o1<20)
+        {
+            GMScript.questions_types_total[10] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[10] += 1;
+            }
+        }
+        if(o1>=20 && o1 <= 30)
+        {
+            GMScript.questions_types_total[11] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[11] += 1;
+            }
+        }
+        if (o1 > 30 && o1 <= 50)
+        {
+            GMScript.questions_types_total[13] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[13] += 1;
+            }
+        }
+        if (o1 > 50 && o1 <= 100)
+        {
+            GMScript.questions_types_total[14] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[12] += 1;
+            }
+        }
+        if (o2 >= 10 && o2 <= 99)
+        {
+            GMScript.questions_types_total[14] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[13] += 1;
+            }
+        }
+        if (o1 >= 100 && o2 >= 10 && o2 <= 99)
+        {
+            GMScript.questions_types_total[15] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[15] += 1;
+            }
+        }
+        if(o1>=100 && o2 >= 100)
+        {
+            GMScript.questions_types_total[16] += 1;
+            if (GMScript.test[index] == o1 - o2)
+            {
+                GMScript.answers_types_total[16] += 1;
+            }
+        }
+
+
+        if (GMScript.test[index] == o1-o2)
+        {
+
+            //Debug.Log("correct ans");
             //button.GetComponent<Image>().sprite= image;
             image.enabled = true;
             //num1text.text = "";
@@ -113,14 +255,14 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             {
                 case 0:
                     r1 += 1;
-                    Debug.Log("R count:-----------" + r1);
+                    //Debug.Log("R count:-----------" + r1);
                     if (r1 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 1:
-                    Debug.Log("R count:-----------" + r2);
+                    //Debug.Log("R count:-----------" + r2);
                     r2 += 1;
                     if (r2 == 5)
                     {
@@ -156,7 +298,7 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
         {
             //button.GetComponent<Button>().interactable = false;
             button.gameObject.SetActive(false);
-            Debug.Log("incorrect ans");
+            //Debug.Log("incorrect ans");
         }
         
         GMScript.index = currquesint+1;
@@ -164,7 +306,7 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             operand1text.text = GMScript.operator1[currquesint+1].ToString();
             operand2text.text = GMScript.operator2[currquesint+1].ToString();
         }
-        Debug.Log("button number" + index + " clicked");
+        //Debug.Log("button number" + index + " clicked");
     }
     //public void buttontesting()
     //{
@@ -172,7 +314,9 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     //}
     public void bingoresponse()
     {
-        Debug.Log("Bingo");
+        //Debug.Log("Bingo");
         bingo_image.enabled = true;
     }
+
+    
 }

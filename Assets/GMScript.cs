@@ -21,6 +21,8 @@ public class GMScript : MonoBehaviour
     public static int[] operator1 = new int[25];
     public static int[] operator2 = new int[25];
     public static bool[] result=new bool[25];
+    public static int[] questions_types_total = new int[17];
+    public static int[] answers_types_total = new int[17];
     public TMP_Text operator1_handler;
     public TMP_Text operand1_handler;
     public TMP_Text operand2_handler;
