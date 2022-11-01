@@ -219,6 +219,7 @@ MonoBehaviour:
   category: 9
   report_text: {fileID: 1333884679}
   progress: {fileID: 1008025838}
+  c: 0
 --- !u!1 &18177035
 GameObject:
   m_ObjectHideFlags: 0
@@ -720,6 +721,7 @@ MonoBehaviour:
   category: 2
   report_text: {fileID: 2088005801}
   progress: {fileID: 988548743}
+  c: 0
 --- !u!1 &117133471
 GameObject:
   m_ObjectHideFlags: 0
@@ -1119,6 +1121,7 @@ MonoBehaviour:
   category: 15
   report_text: {fileID: 834646827}
   progress: {fileID: 1812819934}
+  c: 0
 --- !u!1 &172692206
 GameObject:
   m_ObjectHideFlags: 0
@@ -2244,6 +2247,7 @@ MonoBehaviour:
   category: 5
   report_text: {fileID: 959537105}
   progress: {fileID: 172692208}
+  c: 0
 --- !u!1 &440977659
 GameObject:
   m_ObjectHideFlags: 0
@@ -2784,7 +2788,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: -1083.7125}
+  m_AnchoredPosition: {x: 0, y: -1610}
   m_SizeDelta: {x: 1695, y: 4182}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &493367195
@@ -5320,6 +5324,7 @@ MonoBehaviour:
   category: 10
   report_text: {fileID: 1197486715}
   progress: {fileID: 750100166}
+  c: 0
 --- !u!1 &881403534
 GameObject:
   m_ObjectHideFlags: 0
@@ -5416,6 +5421,7 @@ MonoBehaviour:
   category: 4
   report_text: {fileID: 1918968488}
   progress: {fileID: 633803533}
+  c: 0
 --- !u!1 &882958593
 GameObject:
   m_ObjectHideFlags: 0
@@ -6547,6 +6553,7 @@ MonoBehaviour:
   category: 7
   report_text: {fileID: 1448325940}
   progress: {fileID: 470605138}
+  c: 0
 --- !u!1 &1043409525
 GameObject:
   m_ObjectHideFlags: 0
@@ -7716,6 +7723,7 @@ MonoBehaviour:
   category: 13
   report_text: {fileID: 1301203301}
   progress: {fileID: 1647203271}
+  c: 0
 --- !u!1 &1333884677
 GameObject:
   m_ObjectHideFlags: 0
@@ -8426,9 +8434,9 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: Report_score_script, Assembly-CSharp
-        m_MethodName: reset_report_scores
+      - m_Target: {fileID: 1749361838}
+        m_TargetAssemblyTypeName: report_buttons, Assembly-CSharp
+        m_MethodName: Reset_report
         m_Mode: 1
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
@@ -8572,6 +8580,7 @@ MonoBehaviour:
   category: 14
   report_text: {fileID: 440977661}
   progress: {fileID: 1618779177}
+  c: 0
 --- !u!1 &1544343562
 GameObject:
   m_ObjectHideFlags: 0
@@ -8804,6 +8813,7 @@ MonoBehaviour:
   category: 0
   report_text: {fileID: 1544343564}
   progress: {fileID: 1973468682}
+  c: 0
 --- !u!1 &1608232126
 GameObject:
   m_ObjectHideFlags: 0
@@ -9331,8 +9341,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -12.297}
-  m_SizeDelta: {x: -0.00024414, y: 24.594}
+  m_AnchoredPosition: {x: 0, y: -128.47534}
+  m_SizeDelta: {x: -225, y: -342.5254}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1627341899
 MonoBehaviour:
@@ -10090,10 +10100,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 1
+  m_UiScaleMode: 0
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 2532, y: 1170}
+  m_ReferenceResolution: {x: 800, y: 600}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
@@ -10512,6 +10522,7 @@ MonoBehaviour:
   category: 12
   report_text: {fileID: 200880844}
   progress: {fileID: 802704364}
+  c: 0
 --- !u!1 &1812819932
 GameObject:
   m_ObjectHideFlags: 0
@@ -10743,6 +10754,7 @@ MonoBehaviour:
   category: 11
   report_text: {fileID: 552854680}
   progress: {fileID: 674017860}
+  c: 0
 --- !u!1 &1860686825
 GameObject:
   m_ObjectHideFlags: 0
@@ -11244,6 +11256,7 @@ MonoBehaviour:
   category: 16
   report_text: {fileID: 1650353638}
   progress: {fileID: 1636140999}
+  c: 0
 --- !u!1 &1994739742
 GameObject:
   m_ObjectHideFlags: 0
@@ -11340,6 +11353,7 @@ MonoBehaviour:
   category: 1
   report_text: {fileID: 2100073819}
   progress: {fileID: 1759688534}
+  c: 0
 --- !u!1 &2013839034
 GameObject:
   m_ObjectHideFlags: 0
@@ -11655,6 +11669,7 @@ MonoBehaviour:
   category: 8
   report_text: {fileID: 1860686827}
   progress: {fileID: 1367329697}
+  c: 0
 --- !u!1 &2088005799
 GameObject:
   m_ObjectHideFlags: 0
@@ -11886,6 +11901,7 @@ MonoBehaviour:
   category: 3
   report_text: {fileID: 1621619083}
   progress: {fileID: 1608232128}
+  c: 0
 --- !u!1 &2100073817
 GameObject:
   m_ObjectHideFlags: 0
@@ -12252,6 +12268,7 @@ MonoBehaviour:
   category: 6
   report_text: {fileID: 729520633}
   progress: {fileID: 474952621}
+  c: 0
 --- !u!1 &2129952612
 GameObject:
   m_ObjectHideFlags: 0
