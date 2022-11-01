@@ -9,6 +9,7 @@ public class Report_score_script : MonoBehaviour
     public TMP_Text report_text;
     public TMP_Text progress;
     public static bool reset_parameter = false;
+    public int c = 0;
     // Start is called before the first frame update
     void Start()
     {
@@ -27,15 +28,16 @@ public class Report_score_script : MonoBehaviour
         }
     }
 
-    //public void update()
-    //{
-    //    if (reset_parameter == true)
-    //    {
-    //        Debug.Log("in update method!");
-    //        report_text.text = "Keep on learning! Check back to see your child's progress.";
-    //        progress.text = "";
-    //    }
-    //}
+    void Update()
+    {
+        //Debug.Log(c);
+        if (reset_parameter == true)
+        {
+            Debug.Log("in update method!");
+            report_text.text = "Keep on learning! Check back to see your child's progress.";
+            progress.text = "";
+        }
+    }
 
     //public void reset_report_scores()
     //{
@@ -43,5 +45,5 @@ public class Report_score_script : MonoBehaviour
     //    reset_parameter = true;
     //}
 
-    
+
 }
