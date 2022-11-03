@@ -4,15 +4,12 @@ It's an mobile application which helps kids to
 improve their knowledge on mathematics functions at the 
 early stages with as much fun as it can be. 
 
-# Group-1 Of Software Engineering.
+## Group-1 Of Software Engineering.
 
 
-## Pet Bingo
+### Pet Bingo
+
+![cat-in-bingo-game-ptl3q1813ravyc1g](https://user-images.githubusercontent.com/112659317/199659279-d6772e6a-6c54-4a2f-a9db-08d6ebb0ed08.jpeg)
 
 
-
-## 🔗 Links
-[![portfolio](https://img.shields.io/badge/my_portfolio-000?style=for-the-badge&logo=ko-fi&logoColor=white)](https://katherineoelsner.com/)
-[![linkedin](https://img.shields.io/badge/linkedin-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](https://www.linkedin.com/)
-[![twitter](https://img.shields.io/badge/twitter-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](https://twitter.com/)
 
