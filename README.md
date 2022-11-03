@@ -47,6 +47,21 @@ Pet Feeding Screen:
 
 ![Pet Feeding Screen](https://user-images.githubusercontent.com/112659317/199792919-46f8ced9-2f42-4627-a2fc-1326b382dae9.jpeg)
 
+### Skills:
+Kids will learn the following Mathematic functions conifned to the kindergarten level.
+
+### Report Card:
+Includes a report card section where parents and teacher can monitor the child's progress through time and playing the game.
+
+## Source code for the app
+--> Source code:
+
+
+
+
+
+
+
 
 
 
