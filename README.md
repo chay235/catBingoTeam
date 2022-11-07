@@ -45,6 +45,11 @@ Level Screen:
 
 ![Level Screen](https://user-images.githubusercontent.com/112659317/199792753-7ffdf24f-4ad1-4446-9eec-f8b987088057.jpeg)
 
+Matrix Screen:
+
+![Screenshot 2022-11-06 192854](https://user-images.githubusercontent.com/112659317/200413021-7a6fb7d5-7960-4c14-a3db-80a6e0d9f2cf.png)
+
+
 Report Card:
 
  ![Report card ](https://user-images.githubusercontent.com/112659317/199792850-0a29ec5c-c643-40ec-b149-aafb7103979e.jpeg)
