@@ -68,16 +68,27 @@ Includes a report card section where parents and teacher can monitor the child's
 -> App front-end technology: Unity.
 
 -> App back-end technology: Azure App Service.
+
 -> Software engineering process: Agile process, DevOps methods
+
 -> Software engineering team: Agile team
+
 -> Software engineering tools: Azure DevOpsLinks (Boards, Pipeline, Repos, Test Plans, and Artifacts)
+
 -> Cloud PaaS: Azure App Service
+
 -> Business logic programming language: C# & C++#.
+
 -> User interface (UI) programming language: Unity.
+
 -> Integrated development environment (IDE): Visual Studio for Unity.
+
 -> Code repository: GitHub for Unity.
+
 -> Azure serverless functions.
+
 -> Google AdMob in-app ads.
+
 -> Nuget.
 
 ## Game Features: 
