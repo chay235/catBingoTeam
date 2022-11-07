@@ -34,6 +34,13 @@ Player Screen:
 
 ![Player screen](https://user-images.githubusercontent.com/112659317/199792630-8100a619-bab9-4ee7-b489-41d60b18b0e3.jpeg)
 
+
+Mathematic function: 
+
+![Screenshot 2022-11-06 193031](https://user-images.githubusercontent.com/112659317/200265961-3582e85e-277c-42f7-9f24-fb56ab53e679.png)
+
+
+
 Level Screen:
 
 ![Level Screen](https://user-images.githubusercontent.com/112659317/199792753-7ffdf24f-4ad1-4446-9eec-f8b987088057.jpeg)
