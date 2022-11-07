@@ -7096,7 +7096,7 @@ GameObject:
   - component: {fileID: 1465728819}
   - component: {fileID: 1465728818}
   m_Layer: 5
-  m_Name: Report
+  m_Name: Home
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -7120,7 +7120,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: 1123.8052, y: 465.76978}
-  m_SizeDelta: {x: 191.2575, y: 182.3584}
+  m_SizeDelta: {x: 200, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1465728818
 MonoBehaviour:
@@ -7168,12 +7168,12 @@ MonoBehaviour:
       m_Calls:
       - m_Target: {fileID: 565642025}
         m_TargetAssemblyTypeName: Navigation_bingo, Assembly-CSharp
-        m_MethodName: report_card_nav
+        m_MethodName: home_nav
         m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 6
+          m_IntArgument: 1
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
@@ -7198,7 +7198,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 21300000, guid: c7004891dd1e18b4c8a6edd5146267bc, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 19be260734ef1c441b8779d34a9a1917, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1

@@ -14,4 +14,8 @@ public class Navigation_bingo : MonoBehaviour
     {
         SceneManager.LoadScene(sceneID1);
     }
+    public void home_nav(int sceneID1)
+    {
+        SceneManager.LoadScene(sceneID1);
+    }
 }
