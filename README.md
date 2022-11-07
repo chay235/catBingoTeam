@@ -66,6 +66,7 @@ Includes a report card section where parents and teacher can monitor the child's
 
 ## Technical requirements: 
 -> App front-end technology: Unity.
+
 -> App back-end technology: Azure App Service.
 -> Software engineering process: Agile process, DevOps methods
 -> Software engineering team: Agile team
