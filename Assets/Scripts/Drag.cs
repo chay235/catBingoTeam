@@ -22,10 +22,15 @@ public class Drag : MonoBehaviour
              pointerData.position,
             canvas.worldCamera,
             out position);
-
+        
         transform.position = canvas.transform.TransformPoint(position);
+        float catXmin = (GameObject.Find("Cateating").transform.position.x);
+        float catYmin = (GameObject.Find("Cateating").transform.position.y);
+        float catXmax = catXmin + 50;
+        catYmin = catYmin + 50;
+        float catYmax = catYmin - 100; 
         Debug.Log(transform.position);
-        if (transform.position.x > 1330 && transform.position.x < 1390 && transform.position.y > 185 && transform.position.y < 210)
+        if (transform.position.x > catXmin && transform.position.x < catXmax && transform.position.y < catYmin && transform.position.y > catYmax)
         {
             fruit.SetActive(false);
         }
