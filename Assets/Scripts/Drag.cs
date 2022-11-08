@@ -25,7 +25,7 @@ public class Drag : MonoBehaviour
 
         transform.position = canvas.transform.TransformPoint(position);
         Debug.Log(transform.position);
-        if (transform.position.x > 1250 && transform.position.x < 1400 && transform.position.y > 220 && transform.position.y < 300)
+        if (transform.position.x > 1330 && transform.position.x < 1390 && transform.position.y > 185 && transform.position.y < 210)
         {
             fruit.SetActive(false);
         }

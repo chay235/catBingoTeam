@@ -1,4 +1,5 @@
 using System;
+using System.Linq;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -189,7 +190,8 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             //button.GetComponent<Image>().sprite= image;
             image.enabled = true;
             //num1text.text = "";
-            GMScript.result[index] = true;
+            //GMScript.result[GMScript.Indarray[GMScript.index]] = 1;
+            GMScript.result[GMScript.index] = 1;
             //button.GetComponent<Button>().interactable = false;
 
             if(index!=0 & index!=24 & index % 4 == 0)
@@ -297,15 +299,49 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
         else
         {
             //button.GetComponent<Button>().interactable = false;
+            //GMScript.result[GMScript.Indarray[GMScript.index]] =2;
+            int currnum = GMScript.test[index];
+            for (int i = 0;i< 24; i++)
+            {
+                if ((GMScript.operator1[i] - GMScript.operator2[i])==currnum && GMScript.result[i] == 0)
+                {
+                    GMScript.result[i] = 2;
+                    break;
+                }
+            }
+            Debug.Log("null answer index"+GMScript.Indarray[index]);
             button.gameObject.SetActive(false);
+
             //Debug.Log("incorrect ans");
         }
-        
-        GMScript.index = currquesint+1;
-        if (currquesint < 24) {
-            operand1text.text = GMScript.operator1[currquesint+1].ToString();
-            operand2text.text = GMScript.operator2[currquesint+1].ToString();
+        Debug.Log("index"+index);
+
+        int currind = GMScript.index;
+        while (currind < 24)
+        {
+            string[] res = Array.ConvertAll(GMScript.result, x => x.ToString());
+            Debug.Log(String.Join(",",res));
+            if (GMScript.result[currind + 1] == 2)
+            {
+                Debug.Log("null question index" + currind);
+                currind++;
+                
+            }
+            else
+            {
+
+                GMScript.index = currind + 1;
+                operand1text.text = GMScript.operator1[currind + 1].ToString();
+                operand2text.text = GMScript.operator2[currind + 1].ToString();
+                break;
+            }
         }
+        
+        //GMScript.index = currquesint+1;
+        //if (currquesint < 24) {
+        //    operand1text.text = GMScript.operator1[currquesint+1].ToString();
+        //    operand2text.text = GMScript.operator2[currquesint+1].ToString();
+        //}
         //Debug.Log("button number" + index + " clicked");
     }
     //public void buttontesting()

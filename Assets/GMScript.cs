@@ -18,9 +18,11 @@ public class GMScript : MonoBehaviour
     public static int level_parameter;
     public static int index = 0;
     public static int[] test = new int[25];
+    public static int[] tempans = new int[25];
+    public static int[] Indarray= new int[] {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
     public static int[] operator1 = new int[25];
     public static int[] operator2 = new int[25];
-    public static bool[] result=new bool[25];
+    public static int[] result=new int[25];
     public static int[] questions_types_total = new int[17];
     public static int[] answers_types_total = new int[17];
     public TMP_Text operator1_handler;
@@ -53,21 +55,31 @@ public class GMScript : MonoBehaviour
                 
 
             }
-            test[i] = operator1[i] - operator2[i];
+            tempans[i] = operator1[i] - operator2[i];
             
             
         }
 
         System.Random rnd = new System.Random();
-        test = test.OrderBy(x => rnd.Next()).ToArray();
+        Indarray = Indarray.OrderBy(x => rnd.Next()).ToArray();
+
+        for(int i = 0; i < 25; i++)
+        {
+            test[i] = tempans[Indarray[i]];
+        }
 
         String[] o1 = Array.ConvertAll(operator1, x => x.ToString());
         String[] o2 = Array.ConvertAll(operator2, x => x.ToString());
+        String[] o3 = Array.ConvertAll(tempans, x => x.ToString());
+        String[] o4 = Array.ConvertAll(Indarray, x => x.ToString());
+
         String[] t = Array.ConvertAll(test, x => x.ToString());
         
         Debug.Log(String.Join(",", o1));
         Debug.Log(String.Join(",", o2));
-        Debug.Log(String.Join(",", t));
+        Debug.Log("answer in order" + String.Join(",", o3));
+        Debug.Log("array index" + String.Join(",", o4));
+        Debug.Log("answers showed" + String.Join(",", t));
         
         
 
