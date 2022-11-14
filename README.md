@@ -9,6 +9,18 @@ early stages with as much fun as it can be.
 
 ### Group-1 Of Software Engineering.
 
+### Categories:
+- Technical Tools or Software used
+- Platforms
+- Pet Bingo Introduction
+- Game Screens
+- Skills
+- Report Card
+- Source code for the app
+- Technical Requirements 
+- Game Features
+- Game Algorithm 
+
 ### Technical Tools or Softwear Used:
 
 ### Unity;
@@ -20,9 +32,8 @@ early stages with as much fun as it can be.
  ### Platforms:
  Android, iOS, 
 
-### Pet Bingo
+## Pet Bingo
 
-![cat-in-bingo-game-ptl3q1813ravyc1g](https://user-images.githubusercontent.com/112659317/199659279-d6772e6a-6c54-4a2f-a9db-08d6ebb0ed08.jpeg)
 
 ### PetBingo- Substraction with cats Screens:
 
