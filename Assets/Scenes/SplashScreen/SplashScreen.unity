@@ -136,7 +136,7 @@ GameObject:
   - component: {fileID: 153715296}
   - component: {fileID: 153715295}
   m_Layer: 5
-  m_Name: RawImage
+  m_Name: Title
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -160,7 +160,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
   m_AnchoredPosition: {x: -35, y: -20}
-  m_SizeDelta: {x: 400, y: 400}
+  m_SizeDelta: {x: 500, y: 500}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &153715295
 MonoBehaviour:
@@ -194,7 +194,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Texture: {fileID: 2800000, guid: 785f16f49abc3b04389d6f1b652ff427, type: 3}
+  m_Texture: {fileID: 2800000, guid: a749c798ba2744643938c5e7f2c38aaa, type: 3}
   m_UVRect:
     serializedVersion: 2
     x: 0
@@ -306,7 +306,7 @@ GameObject:
   - component: {fileID: 273144264}
   - component: {fileID: 273144266}
   m_Layer: 5
-  m_Name: Image
+  m_Name: browncat
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -329,7 +329,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0.5}
   m_AnchorMax: {x: 0, y: 0.5}
-  m_AnchoredPosition: {x: 367, y: 109}
+  m_AnchoredPosition: {x: 290, y: 109}
   m_SizeDelta: {x: 600, y: 400}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &273144264
@@ -632,7 +632,7 @@ GameObject:
   - component: {fileID: 566543171}
   - component: {fileID: 566543170}
   m_Layer: 5
-  m_Name: button
+  m_Name: nextbutton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1175,7 +1175,7 @@ GameObject:
   - component: {fileID: 1779611948}
   - component: {fileID: 1779611951}
   m_Layer: 5
-  m_Name: CAT
+  m_Name: yellowCAT
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
