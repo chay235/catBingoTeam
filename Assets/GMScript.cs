@@ -17,6 +17,18 @@ public class GMScript : MonoBehaviour
     int Hard_Max = 999;
     public static int level_parameter;
     public static int index = 0;
+    public static int row1 = 0;
+    public static int row2 = 0;
+    public static int row3 = 0;
+    public static int row4 = 0;
+    public static int row5 = 0;
+    public static int col1 = 0;
+    public static int col2 = 0;
+    public static int col3 = 0;
+    public static int col4 = 0;
+    public static int col5 = 0;
+    public static int diag1 = 0;
+    public static int diag2 = 0;
     public static int[] test = new int[25];
     public static int[] tempans = new int[25];
     public static int[] Indarray= new int[] {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
@@ -33,6 +45,19 @@ public class GMScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        index = 0;
+        row1 = 0;
+        row2 = 0;
+        row3 = 0;
+        row4 = 0;
+        row5 = 0;
+        col1 = 0;
+        col2 = 0;
+        col3 = 0;
+        col4 = 0;
+        col5 = 0;
+        diag1 = 0;
+        diag2 = 0;
         Debug.Log("gm");
         Debug.Log("level_parameter:"+level_parameter);
         System.Random random = new System.Random();

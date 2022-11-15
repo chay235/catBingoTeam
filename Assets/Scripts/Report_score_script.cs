@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using TMPro;
+using System;
 
 public class Report_score_script : MonoBehaviour
 {
@@ -20,12 +21,31 @@ public class Report_score_script : MonoBehaviour
         {
             report_text.text = "Answered correctly " + total_answers + " out of " + total_questions + " times.";
             progress.text = (total_answers*100 / total_questions).ToString() + "%";
+            int progressint = total_answers * 100 / total_questions;
+            if (progressint > 90)
+            {
+                progress.color = new Color32(153, 255, 0, 255); 
+            }
+            else if (progressint > 70 && progressint <= 90)
+            {
+                progress.color = new Color32(0, 191, 255, 255);
+            }
+            else if (progressint > 50 && progressint <= 70)
+            {
+                progress.color = new Color32(191, 80, 14, 255);
+            }
+            else
+            {
+                progress.color = new Color32(255, 0, 0, 255);
+            }
         }
         else
         {
             report_text.text = "Keep on learning! Check back to see your child's progress.";
             progress.text = "";
         }
+        
+
     }
 
     void Update()
