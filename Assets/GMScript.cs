@@ -31,10 +31,10 @@ public class GMScript : MonoBehaviour
     public static int diag2 = 0;
     public static int[] test = new int[25];
     public static int[] tempans = new int[25];
-    public static int[] Indarray= new int[] {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
-    public static int[] operator1 = new int[25];
-    public static int[] operator2 = new int[25];
-    public static int[] result=new int[25];
+    public static int[] Indarray;
+    public static int[] operator1;
+    public static int[] operator2;
+    public static int[] result;
     public static int[] questions_types_total = new int[17];
     public static int[] answers_types_total = new int[17];
     public TMP_Text operator1_handler;
@@ -58,6 +58,10 @@ public class GMScript : MonoBehaviour
         col5 = 0;
         diag1 = 0;
         diag2 = 0;
+        Indarray = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
+        operator1 = new int[25];
+        operator2 = new int[25];
+        result = new int[25];
         Debug.Log("gm");
         Debug.Log("level_parameter:"+level_parameter);
         System.Random random = new System.Random();
