@@ -18,18 +18,7 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public Button button;
     public Image image;
     public Image bingo_image;
-    public static int r1 = 0;
-    public static int r2 = 0;
-    public static int r3 = 0;
-    public static int r4 = 0;
-    public static int r5 = 0;
-    public static int c1 = 0;
-    public static int c2 = 0;
-    public static int c3 = 0;
-    public static int c4 = 0;
-    public static int c5 = 0;
-    public static int d1 = 0;
-    public static int d2 = 0;
+
 
     void Start()
     {
@@ -196,16 +185,16 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
 
             if(index!=0 & index!=24 & index % 4 == 0)
             {
-                d1 += 1;
-                if (d1 == 5)
+                GMScript.diag1 += 1;
+                if (GMScript.diag1 == 5)
                 {
                     bingoresponse();
                 }
             }
             if (index % 6 == 0)
             {
-                d2 += 1;
-                if (d2 == 5)
+                GMScript.diag2 += 1;
+                if (GMScript.diag2 == 5)
                 {
                     bingoresponse();
                 }
@@ -213,39 +202,39 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
 
             switch (index % 5){
                 case 0:
-                    c1 += 1;
+                    GMScript.col1 += 1;
                     //Debug.Log("C count:-----------"+c1);
-                    if (c1 == 5)
+                    if (GMScript.col1 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 1:
                     //Debug.Log("C count:-----------" + c2);
-                    c2 += 1;
-                    if (c2 == 5)
+                    GMScript.col2 += 1;
+                    if (GMScript.col2 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 2:
                     //Debug.Log("C count:-----------" + c3);
-                    c3 += 1;
-                    if (c3 == 5)
+                    GMScript.col3 += 1;
+                    if (GMScript.col3 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 3:
-                    c4 += 1;
-                    if (c4 == 5)
+                    GMScript.col4 += 1;
+                    if (GMScript.col4 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 4:
-                    c5 += 1;
-                    if (c5 == 5)
+                    GMScript.col5 += 1;
+                    if (GMScript.col5 == 5)
                     {
                         bingoresponse();
                     }
@@ -256,38 +245,38 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             switch (index/5)
             {
                 case 0:
-                    r1 += 1;
+                    GMScript.row1 += 1;
                     //Debug.Log("R count:-----------" + r1);
-                    if (r1 == 5)
+                    if (GMScript.row1 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 1:
                     //Debug.Log("R count:-----------" + r2);
-                    r2 += 1;
-                    if (r2 == 5)
+                    GMScript.row2 += 1;
+                    if (GMScript.row2 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 2:
-                    r3 += 1;
-                    if (r3 == 5)
+                    GMScript.row3 += 1;
+                    if (GMScript.row3 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 3:
-                    r4 += 1;
-                    if (r4 == 5)
+                    GMScript.row4 += 1;
+                    if (GMScript.row4 == 5)
                     {
                         bingoresponse();
                     }
                     break;
                 case 4:
-                    r5 += 1;
-                    if (r5 == 5)
+                    GMScript.row5 += 1;
+                    if (GMScript.row5 == 5)
                     {
                         bingoresponse();
                     }
