@@ -12,7 +12,7 @@ public class newplayer : MonoBehaviour
    
     void Start()
     {
-        user_name.text = PlayerPrefs.GetString("Name");
+      user_name.text = PlayerPrefs.GetString("Name");
     }
 
     public void setName()

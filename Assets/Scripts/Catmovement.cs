@@ -4,15 +4,9 @@ using UnityEngine;
 
 public class Catmovement : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
-    {
-        
-    }
-
-    // Update is called once per frame
+  
     void Update()
     {
-        transform.Translate(-0.5f, 0f, 0f);
+        transform.Translate(-0.75f, 0f, 0f);
     }
 }

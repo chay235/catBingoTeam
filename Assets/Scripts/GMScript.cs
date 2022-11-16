@@ -17,24 +17,12 @@ public class GMScript : MonoBehaviour
     int Hard_Max = 999;
     public static int level_parameter;
     public static int index = 0;
-    public static int row1 = 0;
-    public static int row2 = 0;
-    public static int row3 = 0;
-    public static int row4 = 0;
-    public static int row5 = 0;
-    public static int col1 = 0;
-    public static int col2 = 0;
-    public static int col3 = 0;
-    public static int col4 = 0;
-    public static int col5 = 0;
-    public static int diag1 = 0;
-    public static int diag2 = 0;
     public static int[] test = new int[25];
     public static int[] tempans = new int[25];
-    public static int[] Indarray;
-    public static int[] operator1;
-    public static int[] operator2;
-    public static int[] result;
+    public static int[] Indarray= new int[] {0,1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,24};
+    public static int[] operator1 = new int[25];
+    public static int[] operator2 = new int[25];
+    public static int[] result=new int[25];
     public static int[] questions_types_total = new int[17];
     public static int[] answers_types_total = new int[17];
     public TMP_Text operator1_handler;
@@ -45,23 +33,6 @@ public class GMScript : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        index = 0;
-        row1 = 0;
-        row2 = 0;
-        row3 = 0;
-        row4 = 0;
-        row5 = 0;
-        col1 = 0;
-        col2 = 0;
-        col3 = 0;
-        col4 = 0;
-        col5 = 0;
-        diag1 = 0;
-        diag2 = 0;
-        Indarray = new int[] { 0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24 };
-        operator1 = new int[25];
-        operator2 = new int[25];
-        result = new int[25];
         Debug.Log("gm");
         Debug.Log("level_parameter:"+level_parameter);
         System.Random random = new System.Random();
