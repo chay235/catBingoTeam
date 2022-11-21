@@ -14,8 +14,6 @@ public class Drag : MonoBehaviour
     public GameObject orange;
     public GameObject watermelon;
     public GameObject guava;
-<<<<<<< Updated upstream
-=======
     public float appleX;
     public float appleY;
     public float orangeX;
@@ -25,8 +23,6 @@ public class Drag : MonoBehaviour
     public float guavaX;
     public float guavaY;
 
-
->>>>>>> Stashed changes
 
     public void DragHandler(BaseEventData data)
     {
@@ -77,11 +73,10 @@ public class Drag : MonoBehaviour
         {
             apple.SetActive(false);
 
-<<<<<<< Updated upstream
           //  Fruitinc.applecount = (clickControll.applebingoinc - 1).ToString();
-=======
+
             //Fruitinc.applecount = (clickControll.applebingoinc - 1).ToString();
->>>>>>> Stashed changes
+
             Debug.Log("hello eat");
 
             // fruit.SetActive(true);

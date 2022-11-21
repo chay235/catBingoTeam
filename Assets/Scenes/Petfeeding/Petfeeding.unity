@@ -123,101 +123,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &42035771
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 42035772}
-  - component: {fileID: 42035775}
-  - component: {fileID: 42035774}
-  - component: {fileID: 42035773}
-  m_Layer: 5
-  m_Name: RawImage2
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &42035772
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42035771}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 15
-=======
-  m_RootOrder: 19
->>>>>>> Stashed changes
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: -170}
-  m_SizeDelta: {x: 150, y: 166}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &42035773
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42035771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324532b557cbbb442a541edb2264a625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  applecount: {fileID: 0}
-  meloncount: {fileID: 0}
-  orangecount: {fileID: 0}
-  guavacount: {fileID: 0}
-  fruit_counter: 0
---- !u!114 &42035774
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42035771}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &42035775
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 42035771}
-  m_CullTransparentMesh: 1
 --- !u!1 &62922240
 GameObject:
   m_ObjectHideFlags: 0
@@ -352,11 +257,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 21
-=======
   m_RootOrder: 17
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -766,6 +667,14 @@ MonoBehaviour:
   orange: {fileID: 1235358380}
   watermelon: {fileID: 770575738}
   guava: {fileID: 1787132716}
+  appleX: 0
+  appleY: 0
+  orangeX: 0
+  orangeY: 0
+  melonX: 0
+  melonY: 0
+  guavaX: 0
+  guavaY: 0
 --- !u!1 &478865417
 GameObject:
   m_ObjectHideFlags: 0
@@ -858,11 +767,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 17
-=======
-  m_RootOrder: 21
->>>>>>> Stashed changes
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 50, y: -30, z: 0}
 --- !u!1 &489743411
 GameObject:
@@ -972,24 +877,11 @@ RectTransform:
   - {fileID: 1235358381}
   - {fileID: 495710932}
   - {fileID: 1650095294}
-<<<<<<< Updated upstream
-  - {fileID: 2049579700}
-  - {fileID: 42035772}
-  - {fileID: 544134466}
-  - {fileID: 478865419}
-=======
->>>>>>> Stashed changes
   - {fileID: 2091597962}
   - {fileID: 989217357}
   - {fileID: 1364647507}
   - {fileID: 279182411}
-<<<<<<< Updated upstream
-=======
-  - {fileID: 2049579700}
-  - {fileID: 42035772}
-  - {fileID: 544134466}
   - {fileID: 478865419}
->>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -1022,17 +914,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 324532b557cbbb442a541edb2264a625, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-<<<<<<< Updated upstream
-  applecount: {fileID: 0}
-  meloncount: {fileID: 0}
-  orangecount: {fileID: 0}
-  guavacount: {fileID: 0}
-=======
   applecount: {fileID: 2091597963}
   meloncount: {fileID: 989217359}
   orangecount: {fileID: 279182413}
   guavacount: {fileID: 1364647509}
->>>>>>> Stashed changes
   fruit_counter: 0
 --- !u!1 &495710931
 GameObject:
@@ -1170,101 +1055,6 @@ CanvasRenderer:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 495710931}
-  m_CullTransparentMesh: 1
---- !u!1 &544134465
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 544134466}
-  - component: {fileID: 544134469}
-  - component: {fileID: 544134468}
-  - component: {fileID: 544134467}
-  m_Layer: 5
-  m_Name: RawImage3
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &544134466
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544134465}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 16
-=======
-  m_RootOrder: 20
->>>>>>> Stashed changes
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -800, y: 60}
-  m_SizeDelta: {x: 150, y: 166}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &544134467
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544134465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324532b557cbbb442a541edb2264a625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  applecount: {fileID: 0}
-  meloncount: {fileID: 0}
-  orangecount: {fileID: 0}
-  guavacount: {fileID: 0}
-  fruit_counter: 0
---- !u!114 &544134468
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544134465}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &544134469
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 544134465}
   m_CullTransparentMesh: 1
 --- !u!1 &576509553
 GameObject:
@@ -1633,6 +1423,14 @@ MonoBehaviour:
   orange: {fileID: 1235358380}
   watermelon: {fileID: 770575738}
   guava: {fileID: 1787132716}
+  appleX: 0
+  appleY: 0
+  orangeX: 0
+  orangeY: 0
+  melonX: 0
+  melonY: 0
+  guavaX: 0
+  guavaY: 0
 --- !u!1 &848970733
 GameObject:
   m_ObjectHideFlags: 0
@@ -1738,11 +1536,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 19
-=======
   m_RootOrder: 15
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2029,13 +1823,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-<<<<<<< Updated upstream
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Dragfruit, Assembly-CSharp
-=======
         - m_Target: {fileID: 1235358390}
           m_TargetAssemblyTypeName: Drag, Assembly-CSharp
->>>>>>> Stashed changes
           m_MethodName: DragHandler
           m_Mode: 0
           m_Arguments:
@@ -2089,6 +1878,14 @@ MonoBehaviour:
   orange: {fileID: 1235358380}
   watermelon: {fileID: 770575738}
   guava: {fileID: 1787132716}
+  appleX: 0
+  appleY: 0
+  orangeX: 0
+  orangeY: 0
+  melonX: 0
+  melonY: 0
+  guavaX: 0
+  guavaY: 0
 --- !u!1 &1307411661
 GameObject:
   m_ObjectHideFlags: 0
@@ -2232,11 +2029,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 20
-=======
   m_RootOrder: 16
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -2656,13 +2449,8 @@ MonoBehaviour:
     callback:
       m_PersistentCalls:
         m_Calls:
-<<<<<<< Updated upstream
-        - m_Target: {fileID: 0}
-          m_TargetAssemblyTypeName: Dragfruit, Assembly-CSharp
-=======
         - m_Target: {fileID: 1787132725}
           m_TargetAssemblyTypeName: Drag, Assembly-CSharp
->>>>>>> Stashed changes
           m_MethodName: DragHandler
           m_Mode: 0
           m_Arguments:
@@ -2716,149 +2504,14 @@ MonoBehaviour:
   orange: {fileID: 1235358380}
   watermelon: {fileID: 770575738}
   guava: {fileID: 1787132716}
---- !u!1 &2049579699
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 2049579700}
-  - component: {fileID: 2049579703}
-  - component: {fileID: 2049579702}
-  - component: {fileID: 2049579701}
-  - component: {fileID: 2049579705}
-  - component: {fileID: 2049579704}
-  m_Layer: 5
-  m_Name: RawImage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 0
---- !u!224 &2049579700
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049579699}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 14
-=======
-  m_RootOrder: 18
->>>>>>> Stashed changes
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -814.43, y: -420}
-  m_SizeDelta: {x: 250, y: 221}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &2049579701
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049579699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 324532b557cbbb442a541edb2264a625, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  applecount: {fileID: 0}
-  meloncount: {fileID: 0}
-  orangecount: {fileID: 0}
-  guavacount: {fileID: 0}
-  fruit_counter: 0
---- !u!114 &2049579702
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049579699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 1344c3c82d62a2a41a3576d8abb8e3ea, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0.9764706}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_Texture: {fileID: 0}
-  m_UVRect:
-    serializedVersion: 2
-    x: 0
-    y: 0
-    width: 1
-    height: 1
---- !u!222 &2049579703
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049579699}
-  m_CullTransparentMesh: 1
---- !u!114 &2049579704
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049579699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d0b148fe25e99eb48b9724523833bab1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Delegates:
-  - eventID: 5
-    callback:
-      m_PersistentCalls:
-        m_Calls:
-        - m_Target: {fileID: 2049579705}
-          m_TargetAssemblyTypeName: Drag, Assembly-CSharp
-          m_MethodName: DragHandler
-          m_Mode: 0
-          m_Arguments:
-            m_ObjectArgument: {fileID: 0}
-            m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-            m_IntArgument: 0
-            m_FloatArgument: 0
-            m_StringArgument: 
-            m_BoolArgument: 0
-          m_CallState: 2
---- !u!114 &2049579705
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2049579699}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: fea28b0c4aa43814b8199a5257d37187, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  canvas: {fileID: 489743414}
-  apple: {fileID: 0}
-  orange: {fileID: 0}
-  watermelon: {fileID: 0}
-  guava: {fileID: 0}
+  appleX: 0
+  appleY: 0
+  orangeX: 0
+  orangeY: 0
+  melonX: 0
+  melonY: 0
+  guavaX: 0
+  guavaY: 0
 --- !u!1 &2091597961
 GameObject:
   m_ObjectHideFlags: 0
@@ -2891,11 +2544,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 489743415}
-<<<<<<< Updated upstream
-  m_RootOrder: 18
-=======
   m_RootOrder: 14
->>>>>>> Stashed changes
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
