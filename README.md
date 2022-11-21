@@ -39,7 +39,8 @@ early stages with as much fun as it can be.
 
 ![Picture1](https://user-images.githubusercontent.com/112659317/203074236-aee95965-a2be-41c7-a8bd-3f35a18917f4.png)
 
-<img width="1088" alt="Picture3" src="https://user-images.githubusercontent.com/112659317/203074873-534796f0-94cf-4e68-8453-2ed4bba18624.png">
+
+<img width="1100" alt="Picture2" src="https://user-images.githubusercontent.com/112659317/203075238-4faf9600-a58c-4c39-becd-7f099df24ccf.png">
 
 
 
