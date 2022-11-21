@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SceneManagement;
 
 public class clickControll : MonoBehaviour, IPointerClickHandler
 {
@@ -31,10 +32,34 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public static int d1 = 0;
     public static int d2 = 0;
     public static bool over = false;
+    public static bool over1 = false;
+    public static bool over2 = false;
+    public static bool over3 = false;
     public static int applebingoinc = 0;
     public static int melonbingoinc = 0;
     public static int guavabingoinc = 0;
     public static int orangebingoinc = 0;
+    public static bool h1 = true;
+    public static bool h2 = true;
+    public static bool h3 = true;
+    public static bool h4 = true;
+    public static bool h5 = true;
+    public static bool v1 = true;
+    public static bool v2 = true;
+    public static bool v3 = true;
+    public static bool v4 = true;
+    public static bool v5 = true;
+    public static bool dia1 = true;
+    public static bool dia2 = true;
+    public GameObject operand1;
+    public GameObject operand2;
+    public GameObject operator1;
+    public GameObject hint;
+    public GameObject exit;
+    public GameObject congratulations;
+    public GameObject nomoremoves;
+    
+
 
     void Start()
     {
@@ -303,9 +328,324 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
         }
         else
         {
-            //button.GetComponent<Button>().interactable = false;
-            //GMScript.result[GMScript.Indarray[GMScript.index]] =2;
-            int currnum = GMScript.test[index];
+            if (index - 1 == 0)
+            {
+                if (h1 == true)
+                {
+                    h1 = false;
+                }
+                if (v1 == true)
+                {
+                    v1 = false;
+                }
+                if (dia1 == true)
+                {
+                    dia1 = false;
+                }
+            }
+            else if (index - 1 == 1)
+            {
+                if (h1 == true)
+                {
+                    h1 = false;
+                }
+                if (v2 == true)
+                {
+                    v2 = false;
+                }
+            }
+            else if (index - 1 == 2)
+            {
+                if (h1 == true)
+                {
+                    h1 = false;
+                }
+                if (v3 == true)
+                {
+                    v3 = false;
+                }
+            }
+            else if (index - 1 == 3)
+            {
+                if (h1 == true)
+                {
+                    h1 = false;
+                }
+                if (v4 == true)
+                {
+                    v4 = false;
+                }
+            }
+            else if (index - 1 == 4)
+            {
+                if (h1 == true)
+                {
+                    h1 = false;
+                }
+                if (v5 == true)
+                {
+                    v5 = false;
+                }
+                if (dia2 == true)
+                {
+                    dia2 = false;
+                }
+            }
+            else if (index - 1 == 5)
+            {
+                if (h2 == true)
+                {
+                    h2 = false;
+                }
+                if (v1 == true)
+                {
+                    v1 = false;
+                }
+            }
+            else if (index - 1 == 6)
+            {
+                if (h2 == true)
+                {
+                    h2 = false;
+                }
+                if (v2 == true)
+                {
+                    v2 = false;
+                }
+                if (dia1 == true)
+                {
+                    dia1 = false;
+                }
+            }
+            else if (index - 1 == 7)
+            {
+                if (h2 == true)
+                {
+                    h2 = false;
+                }
+                if (v3 == true)
+                {
+                    v3 = false;
+                }
+            }
+            else if (index - 1 == 8)
+            {
+                if (h2 == true)
+                {
+                    h2 = false;
+                }
+                if (v4 == true)
+                {
+                    v4 = false;
+                }
+                if (dia2 == true)
+                {
+                    dia2 = false;
+                }
+            }
+            else if (index - 1 == 9)
+            {
+                if (h2 == true)
+                {
+                    h2 = false;
+                }
+                if (v5 == true)
+                {
+                    v5 = false;
+                }
+            }
+            else if (index - 1 == 10)
+            {
+                if (h3 == true)
+                {
+                    h3 = false;
+                }
+                if (v1 == true)
+                {
+                    v1 = false;
+                }
+            }
+            else if (index - 1 == 11)
+            {
+                if (h3 == true)
+                {
+                    h3 = false;
+                }
+                if (v2 == true)
+                {
+                    v2 = false;
+                }
+            }
+            else if (index - 1 == 12)
+            {
+                if (h3 == true)
+                {
+                    h3 = false;
+                }
+                if (v3 == true)
+                {
+                    v3 = false;
+                }
+                if (dia1 == true)
+                {
+                    dia1 = false;
+                }
+                if (dia2 == true)
+                {
+                    dia2 = false;
+                }
+            }
+            else if (index - 1 == 13)
+            {
+                if (h3 == true)
+                {
+                    h3 = false;
+                }
+                if (v4 == true)
+                {
+                    v4 = false;
+                }
+            }
+            else if (index - 1 == 14)
+            {
+                if (h3 == true)
+                {
+                    h3 = false;
+                }
+                if (v5 == true)
+                {
+                    v5 = false;
+                }
+            }
+            else if (index - 1 == 15)
+            {
+                if (h4 == true)
+                {
+                    h4 = false;
+                }
+                if (v1 == true)
+                {
+                    v1 = false;
+                }
+            }
+            else if (index - 1 == 16)
+            {
+                if (h4 == true)
+                {
+                    h4 = false;
+                }
+                if (v2 == true)
+                {
+                    v2 = false;
+                }
+                if (dia2 == true)
+                {
+                    dia2 = false;
+                }
+            }
+            else if (index - 1 == 17)
+            {
+                if (h4 == true)
+                {
+                    h4 = false;
+                }
+                if (v3 == true)
+                {
+                    v3 = false;
+                }
+            }
+            else if (index - 1 == 18)
+            {
+                if (h4 == true)
+                {
+                    h4 = false;
+                }
+                if (v4 == true)
+                {
+                    v4 = false;
+                }
+                if (dia1 == true)
+                {
+                    dia1 = false;
+                }
+            }
+            else if (index - 1 == 19)
+            {
+                if (h4 == true)
+                {
+                    h4 = false;
+                }
+                if (v5 == true)
+                {
+                    v5 = false;
+                }
+            }
+            else if (index - 1 == 20)
+            {
+                if (h5 == true)
+                {
+                    h5 = false;
+                }
+                if (v1 == true)
+                {
+                    v1 = false;
+                }
+                if (dia2 == true)
+                {
+                    dia2 = false;
+                }
+            }
+            else if (index - 1 == 21)
+            {
+                if (h5 == true)
+                {
+                    h5 = false;
+                }
+                if (v2 == true)
+                {
+                    v2 = false;
+                }
+            }
+            else if (index - 1 == 22)
+            {
+                if (h5 == true)
+                {
+                    h5 = false;
+                }
+                if (v3 == true)
+                {
+                    v3 = false;
+                }
+            }
+            else if (index - 1 == 23)
+            {
+                if (h5 == true)
+                {
+                    h5 = false;
+                }
+                if (v4 == true)
+                {
+                    v4 = false;
+                }
+            }
+            else if (index - 1 == 24)
+            {
+                if (h5 == true)
+                {
+                    h5 = false;
+                }
+                if (v5 == true)
+                {
+                    v5 = false;
+                }
+                if (dia1 == true)
+                {
+                    dia1 = false;
+                }
+            }
+                //button.GetComponent<Button>().interactable = false;
+                //GMScript.result[GMScript.Indarray[GMScript.index]] =2;
+                int currnum = GMScript.test[index];
             for (int i = 0;i< 24; i++)
             {
                 if ((GMScript.operator1[i] - GMScript.operator2[i])==currnum && GMScript.result[i] == 0)
@@ -319,6 +659,7 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
 
             //Debug.Log("incorrect ans");
         }
+        Bingo();
         Debug.Log("index"+index);
 
         int currind = GMScript.index;
@@ -353,35 +694,87 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     //{
     //    Debug.Log("button"+index+"clicked!");
     //}
-    public void applebingoresponse()
+    public void Bingo()
+    {
+        if (h1 == false && h2 == false && h3 == false && h4 == false && h5 == false && v1 == false && v2 == false && v3 == false
+            && v4 == false && v5 == false && dia1 == false && dia2 == false)
+        {
+            operand1.SetActive(false);
+            operand2.SetActive(false);
+            operator1.SetActive(false);
+            hint.SetActive(false);
+            nomoremoves.SetActive(true);
+            exit.SetActive(true);
+
+            //string bingoOrNot = "NOT BINGO";
+            //StartCoroutine(SceneLoader(bingoOrNot));
+        }
+    }
+    IEnumerator SceneLoader(string bingoOrNot)
+    {
+        if (bingoOrNot == "BINGO")
+        {
+            yield return new WaitForSeconds(3f);
+            SceneManager.LoadScene("LevelScreen");
+        }
+    }
+        public void applebingoresponse()
     {
         //Debug.Log("Bingo");
         bingo_image.enabled = true;
         over = true;
         applebingoinc = applebingoinc + 1;
+        operand1.SetActive(false);
+        operand2.SetActive(false);
+        operator1.SetActive(false);
+        hint.SetActive(false);
+        congratulations.SetActive(true);
+        string bingoOrNot = "BINGO";
+        StartCoroutine(SceneLoader(bingoOrNot));
     }
     public void guavabingoresponse()
     {
         //Debug.Log("Bingo");
         bingo_image.enabled = true;
-        over = true;
+        over1 = true;
         guavabingoinc = guavabingoinc + 1;
+        operand1.SetActive(false);
+        operand2.SetActive(false);
+        operator1.SetActive(false);
+        hint.SetActive(false);
+        congratulations.SetActive(true);
+        string bingoOrNot = "BINGO";
+        StartCoroutine(SceneLoader(bingoOrNot));
     }
 
     public void melonbingoresponse()
     {
         //Debug.Log("Bingo");
         bingo_image.enabled = true;
-        over = true;
+        over2 = true;
         melonbingoinc = melonbingoinc + 1;
+        operand1.SetActive(false);
+        operand2.SetActive(false);
+        operator1.SetActive(false);
+        hint.SetActive(false);
+        congratulations.SetActive(true);
+        string bingoOrNot = "BINGO";
+        StartCoroutine(SceneLoader(bingoOrNot));
     }
 
     public void orangebingoresponse()
     {
         //Debug.Log("Bingo");
         bingo_image.enabled = true;
-        over = true;
+        over3 = true;
         orangebingoinc = orangebingoinc + 1;
+        operand1.SetActive(false);
+        operand2.SetActive(false);
+        operator1.SetActive(false);
+        hint.SetActive(false);
+        congratulations.SetActive(true);
+        string bingoOrNot = "BINGO";
+        StartCoroutine(SceneLoader(bingoOrNot));
     }
 
 

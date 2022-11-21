@@ -38,12 +38,26 @@ public class Fruitinc : MonoBehaviour
 			//GameObject apple = GameObject.Find("apple");
 			//apple.GetComponent<apple>().texture = myTexture;
 			applecount.text = clickControll.applebingoinc.ToString();
-			meloncount.text = clickControll.melonbingoinc.ToString();
-			orangecount.text = clickControll.orangebingoinc.ToString();
+			
+		}
+		if (clickControll.over1 == true)
+        {
 			guavacount.text = clickControll.guavabingoinc.ToString();
 		}
-  //      else
-  //      {
+		if (clickControll.over2 == true)
+		{
+			meloncount.text = clickControll.melonbingoinc.ToString();
+		}
+		if (clickControll.over3 == true)
+		{
+			orangecount.text = clickControll.orangebingoinc.ToString();
+
+		}
+
+		
+		
+		//      else
+		//      {
 		//	applecount.text = fruit_counter.ToString();
 		//	meloncount.text = clickControll.melonbingoinc.ToString();
 		//	orangecount.text = clickControll.orangebingoinc.ToString();
