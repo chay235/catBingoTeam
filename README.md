@@ -37,8 +37,9 @@ early stages with as much fun as it can be.
 
 ### PetBingo- Substraction with cats Screens:
 
-![Picture1.png](/.attachments/Picture1-61415ed2-0d28-41cf-8c09-6c8b42f931fc.png)
-![Picture2.png](/.attachments/Picture2-fca71ec6-abe6-446b-9ac3-94587c59a68a.png)
+![Picture1](https://user-images.githubusercontent.com/112659317/203074236-aee95965-a2be-41c7-a8bd-3f35a18917f4.png)<img width="521" alt="Picture2" src="https://user-images.githubusercontent.com/112659317/203074303-c6ec8c55-c2cd-427e-9eec-6589c886c97a.png">
+
+
 
 
 ### Skills:
