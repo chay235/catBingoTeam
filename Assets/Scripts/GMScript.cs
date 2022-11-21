@@ -34,7 +34,7 @@ public class GMScript : MonoBehaviour
     void Start()
     {
         Debug.Log("gm");
-        Debug.Log("level_parameter:" + level_parameter);
+        Debug.Log("level_parameter:"+level_parameter);
         System.Random random = new System.Random();
         for (int i = 0; i < 25; i++)
         {
@@ -52,13 +52,13 @@ public class GMScript : MonoBehaviour
             {
                 operator1[i] = UnityEngine.Random.Range(Hard_Min, Hard_Max);
                 operator2[i] = UnityEngine.Random.Range(Hard_Min, operator1[i]);
-
+                
 
             }
-        tempans[i] = operator1[i] - operator2[i];
-
-
-    }
+            tempans[i] = operator1[i] - operator2[i];
+            
+            
+        }
 
         System.Random rnd = new System.Random();
         Indarray = Indarray.OrderBy(x => rnd.Next()).ToArray();
