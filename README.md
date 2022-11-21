@@ -37,38 +37,8 @@ early stages with as much fun as it can be.
 
 ### PetBingo- Substraction with cats Screens:
 
-Splash Screen:
+![Picture1.png](/.attachments/Picture1-61415ed2-0d28-41cf-8c09-6c8b42f931fc.png)![Picture2.png](/.attachments/Picture2-fca71ec6-abe6-446b-9ac3-94587c59a68a.png)
 
-![Splash screen](https://user-images.githubusercontent.com/112659317/199792501-bc8d1288-3486-4f13-9a0b-b2a37e54f0f6.jpeg)
-
-Player Screen:
-
-![Player screen](https://user-images.githubusercontent.com/112659317/199792630-8100a619-bab9-4ee7-b489-41d60b18b0e3.jpeg)
-
-
-Mathematic function: 
-
-![Screenshot 2022-11-06 193031](https://user-images.githubusercontent.com/112659317/200265961-3582e85e-277c-42f7-9f24-fb56ab53e679.png)
-
-
-
-Level Screen:
-
-![Level Screen](https://user-images.githubusercontent.com/112659317/199792753-7ffdf24f-4ad1-4446-9eec-f8b987088057.jpeg)
-
-Matrix Screen:
-
-![Screenshot 2022-11-06 192854](https://user-images.githubusercontent.com/112659317/200413021-7a6fb7d5-7960-4c14-a3db-80a6e0d9f2cf.png)
-
-
-Report Card:
-
- ![Report card ](https://user-images.githubusercontent.com/112659317/199792850-0a29ec5c-c643-40ec-b149-aafb7103979e.jpeg)
-
-
-Pet Feeding Screen:
-
-![Pet Feeding Screen](https://user-images.githubusercontent.com/112659317/199792919-46f8ced9-2f42-4627-a2fc-1326b382dae9.jpeg)
 
 ### Skills:
 Kids will learn the following Mathematic functions conifned to the kindergarten level.
