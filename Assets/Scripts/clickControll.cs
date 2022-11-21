@@ -31,9 +31,6 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public static int d1 = 0;
     public static int d2 = 0;
     public static bool over = false;
-    public static bool over1 = false;
-    public static bool over2 = false;
-    public static bool over3 = false;
     public static int applebingoinc = 0;
     public static int melonbingoinc = 0;
     public static int guavabingoinc = 0;
