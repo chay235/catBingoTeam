@@ -9,17 +9,8 @@ public class operand1_assignment : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        Debug.Log("Bingoornot"+clickControll.bingoOrNot);
-        /*if (clickControll.bingoOrNot == "BINGO")
-        {
-            num1text.text = "";
-
-        }
-        else
-        {*/
-            Debug.Log("oa1");
-            num1text.text = GMScript.operator1[0].ToString();
-        
+        Debug.Log("oa1");
+        num1text.text = GMScript.operator1[0].ToString();
     }
 
     // Update is called once per frame
