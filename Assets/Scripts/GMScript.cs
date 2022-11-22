@@ -9,8 +9,13 @@ using UnityEngine.UI;
 
 public class GMScript : MonoBehaviour
 {
-    int E_Min = 0;
-    int E_Max = 30;
+    int E_MinL1 = 0;
+    int E_MaxL1 = 10;
+    int E_MinL2 = 11;
+    int E_MaxL2 = 20;
+    int E_MinL3 = 21;
+    int E_MaxL3 = 30;
+
     int Mid_Min = 31;
     int Mid_Max = 99;
     int Hard_Min = 100;
@@ -40,8 +45,20 @@ public class GMScript : MonoBehaviour
         {
             if (level_parameter == 1)
             {
-                operator1[i] = UnityEngine.Random.Range(E_Min, E_Max);
-                operator2[i] = UnityEngine.Random.Range(E_Min, operator1[i]);
+                if(clickControll.score < 10){
+                operator1[i] = UnityEngine.Random.Range(E_MinL1, E_MaxL1);
+                operator2[i] = UnityEngine.Random.Range(E_MinL1, operator1[i]);
+                }
+                else if(clickControll.score > 10 && clickControll.score < 20)
+                {
+                    operator1[i] = UnityEngine.Random.Range(E_MinL2, E_MaxL2);
+                    operator2[i] = UnityEngine.Random.Range(E_MinL2, operator1[i]);
+                }
+                else{
+                    operator1[i] = UnityEngine.Random.Range(E_MinL3, E_MaxL3);
+                    operator2[i] = UnityEngine.Random.Range(E_MinL3, operator1[i]);
+                }
+
             }
             else if (level_parameter == 2)
             {
