@@ -400,6 +400,9 @@ MonoBehaviour:
   button: {fileID: 1351644831}
   image: {fileID: 1800987143}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -2156,6 +2159,9 @@ MonoBehaviour:
   button: {fileID: 313341491}
   image: {fileID: 1421376955}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -2722,6 +2728,9 @@ MonoBehaviour:
   button: {fileID: 32267677}
   image: {fileID: 1061214154}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -2884,6 +2893,9 @@ MonoBehaviour:
   button: {fileID: 1721769375}
   image: {fileID: 1173705652}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -3386,6 +3398,9 @@ MonoBehaviour:
   button: {fileID: 1758994972}
   image: {fileID: 871625413}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -3767,6 +3782,9 @@ MonoBehaviour:
   button: {fileID: 143045122}
   image: {fileID: 1650357604}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -4555,6 +4573,9 @@ MonoBehaviour:
   button: {fileID: 1566241116}
   image: {fileID: 999130643}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -5121,6 +5142,9 @@ MonoBehaviour:
   button: {fileID: 1485047329}
   image: {fileID: 105939053}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -5514,6 +5538,9 @@ MonoBehaviour:
   button: {fileID: 431577313}
   image: {fileID: 1373320617}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -5676,6 +5703,9 @@ MonoBehaviour:
   button: {fileID: 384356672}
   image: {fileID: 2082084229}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -6011,6 +6041,9 @@ MonoBehaviour:
   button: {fileID: 1797790009}
   image: {fileID: 121185100}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -6173,6 +6206,9 @@ MonoBehaviour:
   button: {fileID: 1593186800}
   image: {fileID: 2027748290}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -6798,6 +6834,9 @@ MonoBehaviour:
   button: {fileID: 909942488}
   image: {fileID: 1356044475}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -7605,6 +7644,9 @@ MonoBehaviour:
   button: {fileID: 1958553269}
   image: {fileID: 1922302116}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -7889,6 +7931,9 @@ MonoBehaviour:
   button: {fileID: 1152137288}
   image: {fileID: 2047698721}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -8051,6 +8096,9 @@ MonoBehaviour:
   button: {fileID: 1235110891}
   image: {fileID: 50869168}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -8310,6 +8358,9 @@ MonoBehaviour:
   button: {fileID: 602405182}
   image: {fileID: 381951791}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -9057,6 +9108,9 @@ MonoBehaviour:
   button: {fileID: 1812529351}
   image: {fileID: 2098663132}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -9219,6 +9273,9 @@ MonoBehaviour:
   button: {fileID: 863963216}
   image: {fileID: 1608619635}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -9381,6 +9438,9 @@ MonoBehaviour:
   button: {fileID: 1296349647}
   image: {fileID: 1321544996}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -9640,6 +9700,9 @@ MonoBehaviour:
   button: {fileID: 1580056338}
   image: {fileID: 1910142232}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -10716,6 +10779,9 @@ MonoBehaviour:
   button: {fileID: 1018318355}
   image: {fileID: 1768946974}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -11380,6 +11446,9 @@ MonoBehaviour:
   button: {fileID: 1558715318}
   image: {fileID: 1528351510}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -11639,6 +11708,9 @@ MonoBehaviour:
   button: {fileID: 689592145}
   image: {fileID: 632665936}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -11898,6 +11970,9 @@ MonoBehaviour:
   button: {fileID: 350687849}
   image: {fileID: 1733327650}
   bingo_image: {fileID: 1076321422}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
   operand1: {fileID: 346404498}
   operand2: {fileID: 429229105}
   operator1: {fileID: 988897845}
@@ -12623,8 +12698,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a01b553336e2f3b4694f994190b2a117, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  operand1: {fileID: 346404500}
-  operand2: {fileID: 429229107}
-  ans1: {fileID: 2086969247}
-  ans2: {fileID: 80372157}
-  ans3: {fileID: 1943870730}
+  operand1text: {fileID: 346404500}
+  operand2text: {fileID: 429229107}
+  hint1: {fileID: 2086969247}
+  hint2: {fileID: 80372157}
+  hint3: {fileID: 1943870730}
