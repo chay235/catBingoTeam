@@ -6,6 +6,7 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SocialPlatforms.Impl;
 
 public class clickControll : MonoBehaviour, IPointerClickHandler
 {
@@ -18,7 +19,6 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public Button button;
     public Image image;
     public Image bingo_image;
-
 
     void Start()
     {
@@ -36,138 +36,138 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
 
         //Debug.Log("in click control");
         if(o2==0 || o2==1){
-            GMScript.questions_types_total[0] += 1;
+            Game_state.Qcategory1 += 1;
             if(GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[0] += 1;
+                Game_state.Acategory1 += 1;
             }
         }
         if (o1 == o2 * 2 && o1<10)
         {
-            GMScript.questions_types_total[1] += 1;
+            Game_state.Qcategory2 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[1] += 1;
+                Game_state.Acategory2 += 1;
             }
         }
         if(o1 == o2 * 2 && o1 >= 10 && o1 <= 99)
         {
-            GMScript.questions_types_total[2] += 1;
+            Game_state.Qcategory3 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[2] += 1;
+                Game_state.Acategory3 += 1;
             }
         }
         if (o1 == 10)
         {
-            GMScript.questions_types_total[3] += 1;
+            Game_state.Qcategory4 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[3] += 1;
+                Game_state.Acategory4 += 1;
             }
         }
         if(o1>=10 && o1<=20 && o2 == 10)
         {
-            GMScript.questions_types_total[4] += 1;
+            Game_state.Qcategory5 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[4] += 1;
+                Game_state.Acategory5 += 1;
             }
         }
         if (o1 == o2 * 2 + 1)
         {
-            GMScript.questions_types_total[5] += 1;
+            Game_state.Qcategory6 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[5] += 1;
+                Game_state.Acategory6 += 1;
             }
         }
         if(o1==9 || o1 == 11)
         {
-            GMScript.questions_types_total[6] += 1;
+            Game_state.Qcategory7 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[6] += 1;
+                Game_state.Acategory7 += 1;
             }
         }
         if (o1 == o2 - 2)
         {
-            GMScript.questions_types_total[7] += 1;
+            Game_state.Qcategory8 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[7] += 1;
+                Game_state.Acategory8 += 1;
             }
         }
         if(o2==2)
         {
-            GMScript.questions_types_total[8] += 1;
+            Game_state.Qcategory9 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[8] += 1;
+                Game_state.Acategory9 += 1;
             }
         }
         if (o2 == 10)
         {
-            GMScript.questions_types_total[9] += 1;
+            Game_state.Qcategory10 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[9] += 1;
+                Game_state.Acategory10 += 1;
             }
         }
         if (o1<20)
         {
-            GMScript.questions_types_total[10] += 1;
+            Game_state.Qcategory11 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[10] += 1;
+                Game_state.Acategory11 += 1;
             }
         }
         if(o1>=20 && o1 <= 30)
         {
-            GMScript.questions_types_total[11] += 1;
+            Game_state.Qcategory12 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[11] += 1;
+                Game_state.Acategory12 += 1;
             }
         }
         if (o1 > 30 && o1 <= 50)
         {
-            GMScript.questions_types_total[13] += 1;
+            Game_state.Qcategory13 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[13] += 1;
+                Game_state.Acategory13 += 1;
             }
         }
         if (o1 > 50 && o1 <= 100)
         {
-            GMScript.questions_types_total[14] += 1;
+            Game_state.Qcategory14 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[12] += 1;
+                Game_state.Acategory14 += 1;
             }
         }
         if (o2 >= 10 && o2 <= 99)
         {
-            GMScript.questions_types_total[14] += 1;
+            Game_state.Qcategory15 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[13] += 1;
+                Game_state.Acategory15 += 1;
             }
         }
         if (o1 >= 100 && o2 >= 10 && o2 <= 99)
         {
-            GMScript.questions_types_total[15] += 1;
+            Game_state.Qcategory16 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[15] += 1;
+                Game_state.Acategory16 += 1;
             }
         }
         if(o1>=100 && o2 >= 100)
         {
-            GMScript.questions_types_total[16] += 1;
+            Game_state.Qcategory17 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[16] += 1;
+                Game_state.Acategory17 += 1;
             }
         }
 
@@ -182,8 +182,21 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             //GMScript.result[GMScript.Indarray[GMScript.index]] = 1;
             GMScript.result[GMScript.index] = 1;
             //button.GetComponent<Button>().interactable = false;
+            if (GMScript.level_parameter == 1)
+            {
+                Game_state.EasyScore = Game_state.EasyScore + 1;
+            }
+            else if (GMScript.level_parameter == 2)
+            {
+                Game_state.MediumScore = Game_state.MediumScore + 1;
+            }
+            else
+            {
+                Game_state.HardScore = Game_state.HardScore + 1;
+            }
 
-            if(index!=0 & index!=24 & index % 4 == 0)
+
+            if (index!=0 & index!=24 & index % 4 == 0)
             {
                 GMScript.diag1 += 1;
                 if (GMScript.diag1 == 5)
@@ -287,16 +300,74 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
         }
         else
         {
+            if (index != 0 & index != 24 & index % 4 == 0)
+            {
+                GMScript.wrongans[10] += 1;
+            }
+            if (index % 6 == 0)
+            {
+                GMScript.wrongans[11] += 1;
+            }
+
+            switch (index % 5)
+            {
+                case 0:
+                    GMScript.wrongans[0] += 1;
+                    break;
+                case 1:
+                    GMScript.wrongans[1] += 1;
+                    break;
+                case 2:
+                    GMScript.wrongans[2] += 1;
+                    break;
+                case 3:
+                    GMScript.wrongans[3] += 1;
+                    break;
+                case 4:
+                    GMScript.wrongans[4] += 1;
+                    break;
+                default:
+                    break;
+            }
+            switch (index / 5)
+            {
+                case 0:
+                    GMScript.wrongans[5] += 1;
+                    break;
+                case 1:
+                    GMScript.wrongans[6] += 1;
+                    break;
+                case 2:
+                    GMScript.wrongans[7] += 1;
+                    break;
+                case 3:
+                    GMScript.wrongans[8] += 1;
+                    break;
+                case 4:
+                    GMScript.wrongans[9] += 1;
+                    break;
+                default:
+                    break;
+            }
             //button.GetComponent<Button>().interactable = false;
             //GMScript.result[GMScript.Indarray[GMScript.index]] =2;
+            int wronglines = 0;
             int currnum = GMScript.test[index];
             for (int i = 0;i< 24; i++)
             {
+                if (i<12 && GMScript.wrongans[i] >= 1)
+                {
+                    wronglines++;
+                }
                 if ((GMScript.operator1[i] - GMScript.operator2[i])==currnum && GMScript.result[i] == 0)
                 {
                     GMScript.result[i] = 2;
                     break;
                 }
+            }
+            if (wronglines == 12)
+            {
+                Debug.Log("no more moves");
             }
             Debug.Log("null answer index"+GMScript.Indarray[index]);
             button.gameObject.SetActive(false);

@@ -5,6 +5,7 @@ using UnityEngine.SceneManagement;
 
 public class EasyMediumHard : MonoBehaviour
 {
+    
     public void easy(int num)
     {
         SceneManager.LoadScene(num);

@@ -4,19 +4,13 @@ using UnityEngine;
 
 public class Selectplayerpopup : MonoBehaviour
 {
-    public Canvas canvas;
-    public bool a = false;
+    public GameObject inputField;
+    public GameObject playerScroller;
+   
     public void popup()
     {
-        if(a== false)
-        {
-            a = true;
-            canvas.enabled = true;
-        }else if(a==true)
-        {
-            a = false;
-            canvas.enabled = false;
-        }
+        inputField.SetActive(true);
+        playerScroller.SetActive(false);
     }
         
 }
