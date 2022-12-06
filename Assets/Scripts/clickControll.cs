@@ -6,6 +6,8 @@ using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.EventSystems;
+using UnityEngine.SocialPlatforms.Impl;
+using static UnityEditor.PlayerSettings;
 using UnityEngine.SceneManagement;
 
 public class clickControll : MonoBehaviour, IPointerClickHandler
@@ -19,27 +21,15 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public Button button;
     public Image image;
     public Image bingo_image;
-    public static int r1 = 0;
-    public static int r2 = 0;
-    public static int r3 = 0;
-    public static int r4 = 0;
-    public static int r5 = 0;
-    public static int c1 = 0;
-    public static int c2 = 0;
-    public static int c3 = 0;
-    public static int c4 = 0;
-    public static int c5 = 0;
-    public static int d1 = 0;
-    public static int d2 = 0;
+
     public static bool over = false;
     public static bool over1 = false;
     public static bool over2 = false;
     public static bool over3 = false;
-    public static int applebingoinc = 0;
-    public static int melonbingoinc = 0;
-    public static int guavabingoinc = 0;
-    public static int orangebingoinc = 0;
-	public static int score = 0;
+    //public static int applebingoinc = Game_state.apple;
+    //public static int melonbingoinc = Game_state.watermelon;
+    //public static int guavabingoinc = Game_state.guava;
+    //public static int orangebingoinc = Game_state.orange;
     int E_Min = 0;
     int E_Max = 30;
     int Mid_Min = 31;
@@ -69,8 +59,10 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     public GameObject exit;
     public GameObject congratulations;
     public GameObject nomoremoves;
-    
-
+    public static int applecount;
+    public static int orangecount;
+    public static int meloncount;
+    public static int guavacount;
 
     void Start()
     {
@@ -85,7 +77,8 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
         int temp = 0;
         temp = GMScript.operator1[GMScript.index + 1] - GMScript.operator2[GMScript.index + 1];
         // ans1.text = temp.ToString();
-        for(int i=0; i<2; i++){
+        for (int i = 0; i < 2; i++)
+        {
             if (GMScript.level_parameter == 1)
             {
                 int range1 = UnityEngine.Random.Range(E_Min, E_Max);
@@ -93,12 +86,12 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             }
             else if (GMScript.level_parameter == 2)
             {
-                int range2 = UnityEngine.Random.Range(Mid_Min, Mid_Max); 
+                int range2 = UnityEngine.Random.Range(Mid_Min, Mid_Max);
                 shuffleArr[i] = range2;
             }
-            else if(GMScript.level_parameter == 3)
+            else if (GMScript.level_parameter == 3)
             {
-                int range3 = UnityEngine.Random.Range(Hard_Min, Hard_Max); 
+                int range3 = UnityEngine.Random.Range(Hard_Min, Hard_Max);
                 shuffleArr[i] = range3;
             }
         }
@@ -107,7 +100,7 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
         shuffleArr = shuffleArr.OrderBy(x => rnd.Next()).ToArray();
         hint1.text = shuffleArr[0].ToString();
         hint2.text = shuffleArr[1].ToString();
-        hint3.text = shuffleArr[2].ToString();  
+        hint3.text = shuffleArr[2].ToString();
 
         int currquesint = GMScript.index;
         int o1 = GMScript.operator1[currquesint];
@@ -115,138 +108,138 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
 
         //Debug.Log("in click control");
         if(o2==0 || o2==1){
-            GMScript.questions_types_total[0] += 1;
+            Game_state.Qcategory1 += 1;
             if(GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[0] += 1;
+                Game_state.Acategory1 += 1;
             }
         }
         if (o1 == o2 * 2 && o1<10)
         {
-            GMScript.questions_types_total[1] += 1;
+            Game_state.Qcategory2 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[1] += 1;
+                Game_state.Acategory2 += 1;
             }
         }
         if(o1 == o2 * 2 && o1 >= 10 && o1 <= 99)
         {
-            GMScript.questions_types_total[2] += 1;
+            Game_state.Qcategory3 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[2] += 1;
+                Game_state.Acategory3 += 1;
             }
         }
         if (o1 == 10)
         {
-            GMScript.questions_types_total[3] += 1;
+            Game_state.Qcategory4 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[3] += 1;
+                Game_state.Acategory4 += 1;
             }
         }
         if(o1>=10 && o1<=20 && o2 == 10)
         {
-            GMScript.questions_types_total[4] += 1;
+            Game_state.Qcategory5 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[4] += 1;
+                Game_state.Acategory5 += 1;
             }
         }
         if (o1 == o2 * 2 + 1)
         {
-            GMScript.questions_types_total[5] += 1;
+            Game_state.Qcategory6 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[5] += 1;
+                Game_state.Acategory6 += 1;
             }
         }
         if(o1==9 || o1 == 11)
         {
-            GMScript.questions_types_total[6] += 1;
+            Game_state.Qcategory7 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[6] += 1;
+                Game_state.Acategory7 += 1;
             }
         }
         if (o1 == o2 - 2)
         {
-            GMScript.questions_types_total[7] += 1;
+            Game_state.Qcategory8 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[7] += 1;
+                Game_state.Acategory8 += 1;
             }
         }
         if(o2==2)
         {
-            GMScript.questions_types_total[8] += 1;
+            Game_state.Qcategory9 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[8] += 1;
+                Game_state.Acategory9 += 1;
             }
         }
         if (o2 == 10)
         {
-            GMScript.questions_types_total[9] += 1;
+            Game_state.Qcategory10 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[9] += 1;
+                Game_state.Acategory10 += 1;
             }
         }
         if (o1<20)
         {
-            GMScript.questions_types_total[10] += 1;
+            Game_state.Qcategory11 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[10] += 1;
+                Game_state.Acategory11 += 1;
             }
         }
         if(o1>=20 && o1 <= 30)
         {
-            GMScript.questions_types_total[11] += 1;
+            Game_state.Qcategory12 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[11] += 1;
+                Game_state.Acategory12 += 1;
             }
         }
         if (o1 > 30 && o1 <= 50)
         {
-            GMScript.questions_types_total[13] += 1;
+            Game_state.Qcategory13 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[13] += 1;
+                Game_state.Acategory13 += 1;
             }
         }
         if (o1 > 50 && o1 <= 100)
         {
-            GMScript.questions_types_total[14] += 1;
+            Game_state.Qcategory14 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[12] += 1;
+                Game_state.Acategory14 += 1;
             }
         }
         if (o2 >= 10 && o2 <= 99)
         {
-            GMScript.questions_types_total[14] += 1;
+            Game_state.Qcategory15 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[13] += 1;
+                Game_state.Acategory15 += 1;
             }
         }
         if (o1 >= 100 && o2 >= 10 && o2 <= 99)
         {
-            GMScript.questions_types_total[15] += 1;
+            Game_state.Qcategory16 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[15] += 1;
+                Game_state.Acategory16 += 1;
             }
         }
         if(o1>=100 && o2 >= 100)
         {
-            GMScript.questions_types_total[16] += 1;
+            Game_state.Qcategory17 += 1;
             if (GMScript.test[index] == o1 - o2)
             {
-                GMScript.answers_types_total[16] += 1;
+                Game_state.Acategory17 += 1;
             }
         }
 
@@ -257,24 +250,36 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             //Debug.Log("correct ans");
             //button.GetComponent<Image>().sprite= image;
             image.enabled = true;
-            score = score + 1;
             //num1text.text = "";
             //GMScript.result[GMScript.Indarray[GMScript.index]] = 1;
             GMScript.result[GMScript.index] = 1;
             //button.GetComponent<Button>().interactable = false;
-
-            if(index!=0 & index!=24 & index % 4 == 0)
+            if (GMScript.level_parameter == 1)
             {
-                d1 += 1;
-                if (d1 == 5)
+                Game_state.EasyScore = Game_state.EasyScore + 1;
+            }
+            else if (GMScript.level_parameter == 2)
+            {
+                Game_state.MediumScore = Game_state.MediumScore + 1;
+            }
+            else
+            {
+                Game_state.HardScore = Game_state.HardScore + 1;
+            }
+
+            //for bingo detection
+            if (index!=0 & index!=24 & index % 4 == 0)
+            {
+                GMScript.diag1 += 1;
+                if (GMScript.diag1 == 5)
                 {
                     applebingoresponse();
                 }
             }
             if (index % 6 == 0)
             {
-                d2 += 1;
-                if (d2 == 5)
+                GMScript.diag2 += 1;
+                if (GMScript.diag2 == 5)
                 {
                     orangebingoresponse();
                 }
@@ -282,39 +287,39 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
 
             switch (index % 5){
                 case 0:
-                    c1 += 1;
+                    GMScript.col1 += 1;
                     //Debug.Log("C count:-----------"+c1);
-                    if (c1 == 5)
+                    if (GMScript.col1 == 5)
                     {
                         guavabingoresponse();
                     }
                     break;
                 case 1:
                     //Debug.Log("C count:-----------" + c2);
-                    c2 += 1;
-                    if (c2 == 5)
+                    GMScript.col2 += 1;
+                    if (GMScript.col2 == 5)
                     {
                         guavabingoresponse();
                     }
                     break;
                 case 2:
                     //Debug.Log("C count:-----------" + c3);
-                    c3 += 1;
-                    if (c3 == 5)
+                    GMScript.col3 += 1;
+                    if (GMScript.col3 == 5)
                     {
                         guavabingoresponse();
                     }
                     break;
                 case 3:
-                    c4 += 1;
-                    if (c4 == 5)
+                    GMScript.col4 += 1;
+                    if (GMScript.col4 == 5)
                     {
                         guavabingoresponse();
                     }
                     break;
                 case 4:
-                    c5 += 1;
-                    if (c5 == 5)
+                    GMScript.col5 += 1;
+                    if (GMScript.col5 == 5)
                     {
                         guavabingoresponse();
                     }
@@ -325,38 +330,38 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             switch (index/5)
             {
                 case 0:
-                    r1 += 1;
+                    GMScript.row1 += 1;
                     //Debug.Log("R count:-----------" + r1);
-                    if (r1 == 5)
+                    if (GMScript.row1 == 5)
                     {
                         melonbingoresponse();
                     }
                     break;
                 case 1:
                     //Debug.Log("R count:-----------" + r2);
-                    r2 += 1;
-                    if (r2 == 5)
+                    GMScript.row2 += 1;
+                    if (GMScript.row2 == 5)
                     {
                         melonbingoresponse();
                     }
                     break;
                 case 2:
-                    r3 += 1;
-                    if (r3 == 5)
+                    GMScript.row3 += 1;
+                    if (GMScript.row3 == 5)
                     {
                         melonbingoresponse();
                     }
                     break;
                 case 3:
-                    r4 += 1;
-                    if (r4 == 5)
+                    GMScript.row4 += 1;
+                    if (GMScript.row4 == 5)
                     {
                         melonbingoresponse();
                     }
                     break;
                 case 4:
-                    r5 += 1;
-                    if (r5 == 5)
+                    GMScript.row5 += 1;
+                    if (GMScript.row5 == 5)
                     {
                         melonbingoresponse();
                     }
@@ -365,6 +370,8 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
                     break;
             }
         }
+
+        //for wrong answers
         else
         {
             if (index - 1 == 0)
@@ -682,23 +689,82 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
                     dia1 = false;
                 }
             }
-                //button.GetComponent<Button>().interactable = false;
-                //GMScript.result[GMScript.Indarray[GMScript.index]] =2;
-                int currnum = GMScript.test[index];
+            /*
+            if (index != 0 & index != 24 & index % 4 == 0)
+            {
+                GMScript.wrongans[10] += 1;
+            }
+            if (index % 6 == 0)
+            {
+                GMScript.wrongans[11] += 1;
+            }
+
+            switch (index % 5)
+            {
+                case 0:
+                    GMScript.wrongans[0] += 1;
+                    break;
+                case 1:
+                    GMScript.wrongans[1] += 1;
+                    break;
+                case 2:
+                    GMScript.wrongans[2] += 1;
+                    break;
+                case 3:
+                    GMScript.wrongans[3] += 1;
+                    break;
+                case 4:
+                    GMScript.wrongans[4] += 1;
+                    break;
+                default:
+                    break;
+            }
+            switch (index / 5)
+            {
+                case 0:
+                    GMScript.wrongans[5] += 1;
+                    break;
+                case 1:
+                    GMScript.wrongans[6] += 1;
+                    break;
+                case 2:
+                    GMScript.wrongans[7] += 1;
+                    break;
+                case 3:
+                    GMScript.wrongans[8] += 1;
+                    break;
+                case 4:
+                    GMScript.wrongans[9] += 1;
+                    break;
+                default:
+                    break;
+            }*/
+            //button.GetComponent<Button>().interactable = false;
+            //GMScript.result[GMScript.Indarray[GMScript.index]] =2;
+            //int wronglines = 0;
+            int currnum = GMScript.test[index];
             for (int i = 0;i< 24; i++)
             {
+                //if (i<12 && GMScript.wrongans[i] >= 1)
+                //{
+                //    wronglines++;
+                //}
                 if ((GMScript.operator1[i] - GMScript.operator2[i])==currnum && GMScript.result[i] == 0)
                 {
                     GMScript.result[i] = 2;
                     break;
                 }
             }
+            Bingo();
+            //if (wronglines == 12)
+            //{
+            //    Debug.Log("no more moves");
+            //}
             Debug.Log("null answer index"+GMScript.Indarray[index]);
             button.gameObject.SetActive(false);
 
             //Debug.Log("incorrect ans");
         }
-        Bingo();
         Debug.Log("index"+index);
 
         int currind = GMScript.index;
@@ -733,6 +799,7 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
     //{
     //    Debug.Log("button"+index+"clicked!");
     //}
+
     public void Bingo()
     {
         if (h1 == false && h2 == false && h3 == false && h4 == false && h5 == false && v1 == false && v2 == false && v3 == false
@@ -749,72 +816,87 @@ public class clickControll : MonoBehaviour, IPointerClickHandler
             //StartCoroutine(SceneLoader(bingoOrNot));
         }
     }
-    IEnumerator SceneLoader(string bingoOrNot)
+/*    IEnumerator SceneLoader(string bingoOrNot)
     {
         if (bingoOrNot == "BINGO")
         {
             yield return new WaitForSeconds(3f);
             SceneManager.LoadScene("LevelScreen");
         }
-    }
-        public void applebingoresponse()
+    }*/
+    public void applebingoresponse()
     {
-        //Debug.Log("Bingo");
+
+
+        Debug.Log("from apple Bingo: "+Game_state.apple);
         bingo_image.enabled = true;
         over = true;
-        applebingoinc = applebingoinc + 1;
+        Game_state.apple = Game_state.apple + 1;
+        applecount = Game_state.apple;
         operand1.SetActive(false);
         operand2.SetActive(false);
         operator1.SetActive(false);
         hint.SetActive(false);
         congratulations.SetActive(true);
         string bingoOrNot = "BINGO";
-        StartCoroutine(SceneLoader(bingoOrNot));
+       // StartCoroutine(SceneLoader(bingoOrNot));
     }
     public void guavabingoresponse()
     {
         //Debug.Log("Bingo");
+        Debug.Log("from apple Bingo: " + Game_state.guava);
         bingo_image.enabled = true;
         over1 = true;
-        guavabingoinc = guavabingoinc + 1;
+        Game_state.guava = Game_state.guava + 1;
+        GMScript.guavacount = Game_state.guava;
         operand1.SetActive(false);
         operand2.SetActive(false);
         operator1.SetActive(false);
         hint.SetActive(false);
         congratulations.SetActive(true);
         string bingoOrNot = "BINGO";
-        StartCoroutine(SceneLoader(bingoOrNot));
+       // StartCoroutine(SceneLoader(bingoOrNot));
     }
 
     public void melonbingoresponse()
     {
         //Debug.Log("Bingo");
+        Debug.Log("from apple Bingo: " + Game_state.watermelon);
         bingo_image.enabled = true;
         over2 = true;
-        melonbingoinc = melonbingoinc + 1;
+        Game_state.watermelon = Game_state.watermelon + 1;
+        GMScript.meloncount = Game_state.watermelon;
         operand1.SetActive(false);
         operand2.SetActive(false);
         operator1.SetActive(false);
         hint.SetActive(false);
         congratulations.SetActive(true);
         string bingoOrNot = "BINGO";
-        StartCoroutine(SceneLoader(bingoOrNot));
+       // StartCoroutine(SceneLoader(bingoOrNot));
     }
 
     public void orangebingoresponse()
     {
         //Debug.Log("Bingo");
+        Debug.Log("from apple Bingo: " + Game_state.orange);
         bingo_image.enabled = true;
         over3 = true;
-        orangebingoinc = orangebingoinc + 1;
+        Game_state.orange = Game_state.orange + 1;
+        GMScript.orangecount = Game_state.orange;
         operand1.SetActive(false);
         operand2.SetActive(false);
         operator1.SetActive(false);
         hint.SetActive(false);
         congratulations.SetActive(true);
         string bingoOrNot = "BINGO";
-        StartCoroutine(SceneLoader(bingoOrNot));
+       // StartCoroutine(SceneLoader(bingoOrNot));
     }
 
+    public void bingoresponse()
+    {
+        //Debug.Log("Bingo");
+        bingo_image.enabled = true;
+    }
 
+    
 }
