@@ -43,7 +43,6 @@ public class Drag : MonoBehaviour
 
 public void DragHandler(BaseEventData data)
     {
-
         PointerEventData pointerData = (PointerEventData)data;
 
         Vector2 position;
